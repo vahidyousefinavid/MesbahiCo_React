@@ -5,13 +5,16 @@ import Slide1 from "../../image/photo slider/slider1.jpg";
 import Slide2 from "../../image/photo slider/slider2.jpg";
 import Slide3 from "../../image/photo slider/slider3.jpg";
 import Slide4 from "../../image/photo slider/slider4.jpg";
+import Slide12 from "../../image/photo slider/slider12.jpg";
+import Slide13 from "../../image/photo slider/slider13.jpg";
+import Slide14 from "../../image/photo slider/slider14.jpg";
 import Slide5 from "../../image/photo slider/slider5.jpg";
-import Slide6 from '../../image/photo slider/slider6.jpg';
-import Slide7 from '../../image/photo slider/slider7.jpg'
-import Slide8 from '../../image/photo slider/slider8.jpg'
-import Slide9 from '../../image/photo slider/slider9.jpg'
-import Slide10 from '../../image/photo slider/slider10.jpg'
-import Slide11 from '../../image/photo slider/slider11.jpg'
+import Slide6 from "../../image/photo slider/slider6.jpg";
+import Slide7 from "../../image/photo slider/slider7.jpg";
+import Slide8 from "../../image/photo slider/slider8.jpg";
+import Slide9 from "../../image/photo slider/slider9.jpg";
+import Slide10 from "../../image/photo slider/slider10.jpg";
+import Slide11 from "../../image/photo slider/slider11.jpg";
 import NextIcon from "../../image/next-svgrepo-com.svg";
 import "swiper/css";
 import "swiper/css/pagination";
@@ -19,22 +22,25 @@ import "./Slider.css";
 import { Pagination } from "swiper/modules";
 import { Link } from "react-router-dom";
 import SlodeProd from "./SlideProd/SlodeProd";
+import { rgbToHex } from "@mui/material";
 
 const Slider = () => {
   const Slides = [
-    { id: 1, src: Slide0,title:"انواع سیمان" },
-    { id: 2, src: Slide1,title:"هبلکس(بلوک aac)" },
-    { id: 3, src: Slide2,title:"انواع گچ سفید کاری" },
-    { id: 4, src: Slide3,title:"گچ و خاک آماده" },
-    { id: 5, src: Slide4,title:"انواع سفال" },
-    { id: 6, src: Slide5,title:"انواع آجر طاقی" },
-    { id: 7, src: Slide6,title:"بلوک سیمانی" },
-    { id: 8, src: Slide7,title:"لوله سیمانی" },
-    { id: 9, src: Slide8,title:"خاک سنگ" },
-    { id: 10, src: Slide9,title:"پودر سنگ" },
-    { id: 11, src: Slide10,title:"سیلیس" },
-    { id: 12, src: Slide11,title:"آهک" }
-    
+    { id: 1, src: Slide0, title: "انواع سیمان" },
+    { id: 2, src: Slide1, title: "هبلکس(بلوک aac)" },
+    { id: 3, src: Slide2, title: "انواع گچ سفید کاری" },
+    { id: 4, src: Slide12, title: "انواع گچ سفید کاری" },
+    { id: 5, src: Slide13, title: "انواع گچ سفید کاری" },
+    { id: 6, src: Slide14, title: "گچ و خاک آماده" },
+    { id: 7, src: Slide3, title: "گچ و خاک آماده" },
+    { id: 8, src: Slide4, title: "انواع سفال" },
+    { id: 9, src: Slide5, title: "انواع آجر طاقی" },
+    { id: 10, src: Slide6, title: "بلوک سیمانی" },
+    { id: 11, src: Slide7, title: "لوله سیمانی" },
+    { id: 12, src: Slide8, title: "خاک سنگ" },
+    { id: 11, src: Slide9, title: "پودر سنگ" },
+    { id: 12, src: Slide10, title: "سیلیس" },
+    { id: 13, src: Slide11, title: "آهک" },
   ];
 
   const PageProd = [
@@ -50,12 +56,8 @@ const Slider = () => {
 
   const handleMouseLeave = (event) => {
     setHover(event);
-   
   };
 
-
-
-  
   return (
     <div className="Containerr">
       <div
@@ -65,11 +67,11 @@ const Slider = () => {
         <div className="col-sm-12 order-2 col-lg-6  text-center">
           <ul className="listButt">
             {/* {PageProd.map((item, index) => ( */}
-              {/* // <li className="List" key={index}> */}
-                {/* <Link className="List"  to={item.Page}> */}
-                {/* {item.title} */}
-                {/* </Link> */}
-              {/* </li> */}
+            {/* // <li className="List" key={index}> */}
+            {/* <Link className="List"  to={item.Page}> */}
+            {/* {item.title} */}
+            {/* </Link> */}
+            {/* </li> */}
             {/* ))} */}
           </ul>
         </div>
@@ -86,8 +88,8 @@ const Slider = () => {
       </div>
       <div>
         <Swiper
-          style={{ marginBottom: "50px", paddingBottom: "50px",width:"100%" }}
-          slidesPerView= {1}
+          style={{ marginBottom: "50px", paddingBottom: "50px", width: "100%" }}
+          slidesPerView={1}
           spaceBetween={10}
           pagination={{
             clickable: true,
@@ -112,7 +114,6 @@ const Slider = () => {
           }}
           modules={[Pagination]}
           className="mySwiper"
-          
         >
           {Slides.map((item, index) => (
             <SwiperSlide key={index} style={{ position: "relative" }}>
@@ -138,6 +139,23 @@ const Slider = () => {
                   {item.title}
                 </h2>
               </div>
+              <h2
+                className="font-iransans"
+                style={{
+                  position: "absolute",
+                  top: "10px",
+                  right: "5px",
+                  fontWeight: "bold",
+                  fontSize: "20px",
+                  color: "#fff",
+                  backgroundColor: "rgb(160 228 39 / 90%)",
+                  borderRadius: "5px",
+                  padding: "12px 20px",
+                  opacity : hover ===item.id ? "0" : "1"
+                }}
+              >
+                {item.title}
+              </h2>
               <h4
                 className="font-iransans"
                 style={{
