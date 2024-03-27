@@ -1,12 +1,17 @@
 import React from "react";
 import "./Footer.css";
-import Logo from "../../image/Logo.svg";
-import Insta from '../../image/image new/footer/icons8-insta (1).svg'
-import Face from '../../image/image new/footer/icons8-facebook (2).svg'
-import G from '../../image/image new/footer/icons8-google-old (1).svg'
-import Twitter from '../../image/icons8-twitter.svg'
-// import InstagramIcon from '@mui/icons-material/Instagram';
+import ICON1 from "../../image/photo slider/backgrund/icon/icons8-address-32.png";
+import ICON2 from "../../image/photo slider/backgrund/icon/icons8-envelope-20.png";
+import ICON3 from "../../image/photo slider/backgrund/icon/icons8-phone-20.png";
+import ICON4 from "../../image/photo slider/backgrund/icon/icons8-telegram-20.png";
+import ICON5 from "../../image/photo slider/backgrund/icon/icons8-tick-60.png"
 const Footer = () => {
+  const Count = [
+    { id: 1, title: "تلفن", text: "09188808587", Src: ICON3 },
+    { id: 2, title: "ایمیل", text: "info@gmail.com", Src: ICON2 },
+    { id: 3, title: "آدرس", text: "همدان", Src: ICON1 },
+    { id: 4, title: " فضای مجازی", text: "@hamedan", Src: ICON4 },
+  ];
   const [anchorEl, setAnchorEl] = React.useState(null);
   const open = Boolean(anchorEl);
   const handleClick = (event) => {
@@ -23,10 +28,27 @@ const Footer = () => {
         marginTop: "60px",
         backgroundColor: "#2d2c33",
         color: "#fff",
-        padding: "5rem",
+        padding: "40px",
+        height:"450px"
       }}
     >
-      <div className="row" style={{ position: "relative" }}>
+      <h1 style={{position:"relative"}}>راه های ارتباط با ما
+       <span style={{position:"absolute",top:"-1.5rem"}}><img src={ICON5}/></span>
+      </h1>
+
+      <div className="row StlRow" style={{ justifyContent: "center",marginTop:"7rem" }}>
+        {Count.map((item, index) => (
+          <div key={index} className="col-6  styleCol">
+            <div className="cardStyle">
+              <div className="regStyle"></div>
+              <img src={item.Src} />
+              <h4> {item.title}</h4>
+              <h5>{item.text}</h5>
+            </div>
+          </div>
+        ))}
+      </div>
+      {/* <div className="row" style={{ position: "relative" }}>
         <div className="col-sm-12 col-lg-3 mb-10">
           <div style={{ borderTop: "1px solid #fff" }}>
             <h1
@@ -213,7 +235,7 @@ const Footer = () => {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 };

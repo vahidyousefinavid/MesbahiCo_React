@@ -20,10 +20,15 @@
 .StyleParag span{
     position: absolute;
     top: -1rem;
-    left: 13rem;
+    left: 18rem;
 }
-@media screen and (max-width: 1020px) {
-  
+@media screen and (max-width: 1240px) {
+    .Countainer{
+        max-width: 1300px;
+        height: 20rem;
+        margin: 3rem auto 16rem auto;
+       
+    }
  
     .styleImg{
         width: 50% !important;

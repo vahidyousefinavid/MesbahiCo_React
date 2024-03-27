@@ -1,37 +1,114 @@
 .Conntaineer{
-    max-width: 1300px;
-    margin: 0 auto;   
+    max-width: 1200px;
+    margin: 0 auto;  
+    padding: 0;
+    color: #2d2c33; 
+    overflow-x: hidden;
+}
+
+.styleCol{
+    height: 120px;
+    flex: 0 0 auto;
+    width: 20%;
+    text-align: center;
+}
+
+.cardStyle{
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    background-color: #333334;
     color: #2d2c33;
-
-    /* color:#787373; */
+    position: relative;
 }
 
-input{
-    background-color :#5e5d63;
-    border-radius: 2px;
-    padding: 3px 12px;
+.regStyle{
+    position: absolute;
+    bottom: -2px;
+    right: 25%;
+    background-color: #fbda39;
+    width: 100px;
+    height: 5px;
+    border-radius: 0 0 3px 3px;
 }
 
-input:focus{
-    outline: none;
-    /* color:#b9b8be; */
+.cardStyle h4{
+    color: #fbda39;
+   padding: 26px 0;
+   font-size: 17px;
+   font-weight: bold;
 }
+.cardStyle h5{ 
+    color: #fff;
+    font-size: 17px;
+    
+    font-family: 'iransans-num';
+}
+
+.cardStyle img{
+    background-color: #333334;
+    padding: 12px;
+    border-radius: 3px;
+    position: absolute;
+    top: -1.5rem;
+    right: 0;
+}
+
+
 
 
 @media screen and (max-width: 1020px) {
-    input{
-        background-color :#5e5d63;
-        border-radius: 2px;
-        padding: 3px 12px;
-        width: 100%;
-    }
-    
 
-    .StyleObject{
-            display: flex !important;
-          right: 3rem;
-          left: 3rem;
-    }
+ .Conntaineer{
+    margin-top: 20rem !important;
+    overflow-y: hidden;
  }
 
+ .StlRow{
+    margin-top: 5rem !important;
+ }
 
+     .styleCol{
+        flex: 0 0 auto;
+        width: 50%;
+        text-align: center;
+        margin-bottom: 35px;
+    }
+
+    .cardStyle img{
+         background-color: #333334;
+        padding: 12px;
+        border-radius: 3px;
+        position: absolute;
+        top: -1.5rem;
+        right: 0
+    }
+
+    .cardStyle h4{
+        padding: 25px 0;
+        font-size: 20px;
+        font-weight: bold;
+     }
+     
+   
+     .cardStyle h5{
+       
+        font-size: 12px;
+        font-weight: bold;
+    }
+
+    .regStyle{
+        position: absolute;
+        bottom: -2px;
+        background-color: #fbda39;
+        width: 50%;
+        margin: 0 auto;
+        height: 5px;
+        border-radius: 0 0 3px 3px;
+    }
+    
+    
+   
+ }
+
+ 

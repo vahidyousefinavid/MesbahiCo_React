@@ -61,27 +61,20 @@ const Slider = () => {
   return (
     <div className="Containerr">
       <div
-        className="row justify-evenly"
-        style={{ marginBottom: "3rem", alignItems: "center" }}
+        className="row justify-center"
+        style={{ marginBottom: "3.5rem", alignItems: "center" }}
       >
-        <div className="col-sm-12 order-2 col-lg-6  text-center">
+        <div className="col-sm-12 order-2 col-lg-12  text-center">
           <ul className="listButt">
-            {/* {PageProd.map((item, index) => ( */}
-            {/* // <li className="List" key={index}> */}
-            {/* <Link className="List"  to={item.Page}> */}
-            {/* {item.title} */}
-            {/* </Link> */}
-            {/* </li> */}
-            {/* ))} */}
           </ul>
         </div>
         <div className="col-sm-12 order-1 col-lg-3  text-center">
           <div>
             <h1
               className="font-iransans"
-              style={{ fontSize: "40px", fontWeight: "bold" }}
+              style={{ fontSize: "40px", fontWeight: "bold", margin: "auto" }}
             >
-              انواع سیمان
+              مصالح ساختمانی
             </h1>
           </div>
         </div>
@@ -117,7 +110,11 @@ const Slider = () => {
         >
           {Slides.map((item, index) => (
             <SwiperSlide key={index} style={{ position: "relative" }}>
-              <img style={{ height: "25rem" }} src={item.src} />
+              <img
+                style={{ height: "25rem" }}
+                src={item.src}
+                alt={item.title}
+              />
               <div
                 className="StleCover"
                 onMouseEnter={() => {
@@ -136,7 +133,7 @@ const Slider = () => {
                     padding: "0 15px",
                   }}
                 >
-                  {item.title}
+          عرضه این محصول با قیمت عمده ارائه می شود.
                 </h2>
               </div>
               <h2
@@ -146,29 +143,17 @@ const Slider = () => {
                   top: "10px",
                   right: "5px",
                   fontWeight: "bold",
-                  fontSize: "20px",
-                  color: "#fff",
-                  backgroundColor: "rgb(160 228 39 / 90%)",
+                  fontSize: "15px",
+                  color: "#3e3f3c",
+                  backgroundColor: "rgba(210, 241, 13, 0.9)",
                   borderRadius: "5px",
-                  padding: "12px 20px",
-                  opacity : hover ===item.id ? "0" : "1"
+                  padding: "9px 18px",
+                  opacity: hover === item.id ? "0" : "1",
+                  
                 }}
               >
                 {item.title}
               </h2>
-              <h4
-                className="font-iransans"
-                style={{
-                  position: "absolute",
-                  bottom: hover === item.id ? "20rem" : "3rem",
-                  left: "3px",
-                  fontSize: "20px",
-                  fontWeight: "bold",
-                  zIndex: "100",
-                }}
-              >
-                ازخشت اول با شما هستیم
-              </h4>
               <span
                 className="font-iransans absolute bottom-3 left-5"
                 style={{
@@ -176,18 +161,19 @@ const Slider = () => {
                   fontSize: "15px",
                   fontWeight: "bold",
                   zIndex: "100",
+                  cursor: "pointer",
                 }}
               >
-                دیدن پروژه
+                اطلاعات بیشتر
                 <span
                   style={{
                     position: "absolute",
-                    left: "4.5rem",
+                    left: "5.5rem",
                     bottom: "0.4rem",
                     width: "12%",
                   }}
                 >
-                  <img src={NextIcon} />
+                  <img src={NextIcon} alt="next"/>
                 </span>
               </span>
             </SwiperSlide>

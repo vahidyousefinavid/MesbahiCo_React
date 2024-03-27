@@ -20,7 +20,7 @@ const Container = () => {
       <ListH/>
       <Slider/>
       <Achieve/>
-      <SlideT/>
+      {/* <SlideT/> */}
       <Footer/>
     </div>
   )

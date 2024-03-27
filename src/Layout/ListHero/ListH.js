@@ -3,6 +3,7 @@ import "./ListH.css";
 import Home1 from "../../image/photo slider/ceman.jpg";
 import Home2 from "../../image/photo slider/heblecs.jpg";
 import Home3 from "../../image/photo slider/cash.jpg";
+import { Link } from "react-router-dom";
 const Itemlist = [
   {
     id: 1,
@@ -10,7 +11,7 @@ const Itemlist = [
     type: "در حال حاضر شرکت سیمان هگمتان با تولید ۷۰۰۰ تن در روز به عنوان یکی از بزرگترین تولید کنندگان سیمان کشور توانسته است",
     src: Home1,
     dir: "rtl",
-    width: "40%",
+    width: "50%",
     textAlign:"justify"
   },
   {
@@ -19,7 +20,7 @@ const Itemlist = [
     type: "بلوک هبلکس از جمله مصالح ساختمانی است که از جنس ترکیبی سیمان، آهک، پودر آلومینیوم و سیلیس ساخته شده است",
     src: Home2,
     dir: "ltr",
-    width: "80%",
+    width: "90%",
     textAlign:"end"
   },
   {
@@ -28,7 +29,7 @@ const Itemlist = [
     type: "قبل از خرید از مجموعه ما میتوانید قیمت ها را مقایسه کنید.",
     src: Home3,
     dir: "rtl",
-    width: "80%",
+    width: "90%",
     height: "20rem",
     textAlign:"justify"
   },
@@ -41,7 +42,7 @@ const ListH = () => {
         <div className="row StyleHeader items-center mb-12" >
           <div className="col-6"  style={{ textAlign: "start" }}>
             <div className="styleProd">
-              <h1 className="font-iransans font-bold text-4xl">محصولات ما</h1>
+              <h1 className="font-iransans font-bold text-4xl"><Link to="/PageProduct">محصولات ما</Link></h1>
             </div>
           </div>
           <div className="col-6" style={{textAlign:"-webkit-left"}}>
@@ -95,6 +96,7 @@ const ListH = () => {
                         height: `${item.height}`,
                       }}
                       src={item.src}
+                      alt={item.title}
                     />
                   </div>
                   <div></div>

@@ -1,15 +1,25 @@
 .Container{
-    max-width: 1300px;
+    max-width: 1200px;
     margin: 0 auto;
+}
+
+.LogoLeft{
+    display: none;
 }
 
 
 @media screen and (max-width: 1020px) {
-    .styleImg{
-        width:10rem;
-        padding-right: 2rem;
+ 
+    
+    .LogoLeft{
+        display: block !important;
+    }
+        .styleImg{
+            width: 20% !important;
+            /* display: none; */
         }
 
+          
         .styleNAv{
             padding-right: 2rem;
         }
@@ -18,7 +28,11 @@
             margin-top: 12px;
             display: flex;
             margin-right: 2rem;
+            justify-content: end;
+            font-weight: bold;
+            color: #fbda39;
         }
- 
+
+      
  }
 
