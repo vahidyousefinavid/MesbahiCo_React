@@ -6,16 +6,13 @@
     width: 100% !important;
     height: 100% !important;
   }
-  /* .mySwiper{
-    width: 100% !important;
-    height: 100% !important;
-  } */
+
   .swiper-slide {
     text-align: center;
     font-size: 18px;
     background: #fff;
   
-    /* Center slide text vertically */
+   
     display: flex;
     justify-content: center;
     align-items: center;
@@ -32,8 +29,6 @@
   .listButt li{
     display: inline-block;
     margin: 0 12px;
-    /* font-size: 10px;
-    font-weight:bold; */
     cursor: pointer;
   }
 

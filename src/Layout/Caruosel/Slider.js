@@ -22,25 +22,25 @@ import "./Slider.css";
 import { Pagination } from "swiper/modules";
 import { Link } from "react-router-dom";
 import SlodeProd from "./SlideProd/SlodeProd";
-import { rgbToHex } from "@mui/material";
+import { Box, Typography, rgbToHex } from "@mui/material";
 
 const Slider = () => {
   const Slides = [
-    { id: 1, src: Slide0, title: "انواع سیمان" },
+    { id: 1, src: Slide14, title: "انواع سیمان" },
     { id: 2, src: Slide1, title: "هبلکس(بلوک aac)" },
     { id: 3, src: Slide2, title: "انواع گچ سفید کاری" },
     { id: 4, src: Slide12, title: "انواع گچ سفید کاری" },
     { id: 5, src: Slide13, title: "انواع گچ سفید کاری" },
-    { id: 6, src: Slide14, title: "گچ و خاک آماده" },
-    { id: 7, src: Slide3, title: "گچ و خاک آماده" },
-    { id: 8, src: Slide4, title: "انواع سفال" },
-    { id: 9, src: Slide5, title: "انواع آجر طاقی" },
-    { id: 10, src: Slide6, title: "بلوک سیمانی" },
-    { id: 11, src: Slide7, title: "لوله سیمانی" },
-    { id: 12, src: Slide8, title: "خاک سنگ" },
-    { id: 11, src: Slide9, title: "پودر سنگ" },
-    { id: 12, src: Slide10, title: "سیلیس" },
-    { id: 13, src: Slide11, title: "آهک" },
+
+    { id: 6, src: Slide3, title: "گچ و خاک آماده" },
+    { id: 7, src: Slide4, title: "انواع سفال" },
+    { id: 8, src: Slide5, title: "انواع آجر طاقی" },
+    { id: 9, src: Slide6, title: "بلوک سیمانی" },
+    { id: 10, src: Slide7, title: "لوله سیمانی" },
+    { id: 11, src: Slide8, title: "خاک سنگ" },
+    { id: 12, src: Slide9, title: "پودر سنگ" },
+    { id: 13, src: Slide10, title: "سیلیس" },
+    { id: 14, src: Slide11, title: "آهک" },
   ];
 
   const PageProd = [
@@ -81,101 +81,103 @@ const Slider = () => {
       </div>
       <div>
         <Swiper
-          style={{ marginBottom: "50px", paddingBottom: "50px", width: "100%" }}
+          style={{ marginBottom: "50px", paddingBottom: "70px", width: "100%", padding: 40 }}
           slidesPerView={1}
           spaceBetween={10}
           pagination={{
             clickable: true,
           }}
           breakpoints={{
-            "@0.00": {
+            0: {
               slidesPerView: 1,
-              spaceBetween: 10,
+              spaceBetween: 30,
             },
-            "@0.75": {
-              slidesPerView: 2,
-              spaceBetween: 20,
+            400: {
+              slidesPerView: 1.1,
+              spaceBetween: 30,
             },
-            "@1.00": {
+            768: {
+              slidesPerView: 2.5,
+              spaceBetween: 30,
+            },
+            910: {
               slidesPerView: 3,
-              spaceBetween: 40,
+              spaceBetween: 30,
             },
-            "@1.50": {
+            1200: {
+              slidesPerView: 3,
+              spaceBetween: 30,
+            },
+            1400: {
               slidesPerView: 4,
               spaceBetween: 50,
             },
+            1600:{
+              slidesPerView: 5,
+              spaceBetween: 50,
+            }
           }}
           modules={[Pagination]}
           className="mySwiper"
         >
           {Slides.map((item, index) => (
             <SwiperSlide key={index} style={{ position: "relative" }}>
-              <img
-                style={{ height: "25rem" }}
-                src={item.src}
-                alt={item.title}
-              />
-              <div
-                className="StleCover"
-                onMouseEnter={() => {
-                  handleMouseEnter(item.id);
-                }}
-                onMouseLeave={() => handleMouseLeave()}
-              >
-                <h2
-                  className="font-iransans"
-                  style={{
-                    position: "absolute",
-                    top: hover === item.id ? "30%" : "15%",
-                    textAlign: "center",
-                    fontSize: "20px",
-                    fontWeight: "bold",
-                    padding: "0 15px",
-                  }}
-                >
-          عرضه این محصول با قیمت عمده ارائه می شود.
-                </h2>
-              </div>
-              <h2
-                className="font-iransans"
-                style={{
-                  position: "absolute",
-                  top: "10px",
-                  right: "5px",
-                  fontWeight: "bold",
-                  fontSize: "15px",
-                  color: "#3e3f3c",
-                  backgroundColor: "rgba(210, 241, 13, 0.9)",
-                  borderRadius: "5px",
-                  padding: "9px 18px",
-                  opacity: hover === item.id ? "0" : "1",
-                  
-                }}
-              >
-                {item.title}
-              </h2>
-              <span
-                className="font-iransans absolute bottom-3 left-5"
-                style={{
-                  color: "#000",
-                  fontSize: "15px",
-                  fontWeight: "bold",
-                  zIndex: "100",
-                  cursor: "pointer",
-                }}
-              >
-                اطلاعات بیشتر
-                <span
-                  style={{
-                    position: "absolute",
-                    left: "5.5rem",
-                    bottom: "0.4rem",
-                    width: "12%",
-                  }}
-                >
-                  <img src={NextIcon} alt="next"/>
-                </span>
-              </span>
+              <Box sx={{
+                display: 'flex',
+                flexDirection: 'column',
+                height: 300,
+                width: 250,
+                borderRadius: 3,
+                position: 'relative',
+                justifyContent: 'center',
+                alignItems: 'center',
+                cursor: 'pointer',
+                boxShadow: '0px 10px 25px 0px rgba(0, 0, 0, 0.3)',
+                '&:hover': {
+                  '& >.Box': {
+                    backgroundPosition: 'right center',
+                    color: '#fff',
+                    textDecoration: 'none',
+                  }
+                }
+              }}>
+                <img src={item.src} style={{
+                  display: 'flex',
+                  width: '100%',
+                  height: '100%',
+                  borderRadius: 15,
+                  zIndex: 10
+                }} />
+                <Box className='Box' sx={{
+                  display: 'flex',
+                  width: '80%',
+                  height: 40,
+                  position: 'absolute',
+                  bottom: 10,
+                  zIndex: 10,
+                  textAlign: 'center',
+                  backgroundImage: 'linear-gradient(to right, hsla(39,100%,68%,1) 0%, #c77f1a 51%, #eba51b 100%)',
+                  textTransform: 'uppercase',
+                  transition: '0.5s',
+                  cursor: 'pointer',
+                  backgroundSize: '200% auto',
+                  color: 'white',
+                  borderRadius: '6px',
+                  '&:hover': {
+                    backgroundPosition: 'right center',
+                    color: '#fff',
+                    textDecoration: 'none',
+                  },
+                  // boxShadow: '0px 10px 25px 0px rgba(0, 0, 0, 0.2)',
+                  justifyContent: 'center',
+                  alignItems: 'center'
+
+                }}>
+                  <Typography style={{ color: '#111', fontFamily: "IRANSans" }}>
+                    {item.title}
+                  </Typography>
+                </Box>
+              </Box>
             </SwiperSlide>
           ))}
         </Swiper>

@@ -8,6 +8,17 @@
     flex-direction: row;
     align-items: center;
     position: relative;
+    z-index: 100;
+    border-radius: 12px;
+}
+
+.POsNav{
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  background-color: #fff;
+  z-index: 200;
 }
 
 

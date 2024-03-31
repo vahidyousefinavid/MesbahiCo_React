@@ -1,36 +1,53 @@
 .Container{
     max-width: 1200px;
     margin: 0 auto;
+    /* height: 4rem; */
 }
 
 .LogoLeft{
     display: none;
 }
 
+.DISCOL{
+    z-index: 800;
+    background-color: #fff;
+    width: 100%;
+}
+
+.Fliexrow{
+    display: flex;
+    flex-direction: row;
+}
 
 @media screen and (max-width: 1020px) {
- 
+
     
+   
+  
     .LogoLeft{
         display: block !important;
     }
-        .styleImg{
-            width: 20% !important;
-            /* display: none; */
-        }
-
-          
-        .styleNAv{
-            padding-right: 2rem;
-        }
-
+   
+    .StyRES {
+            width:40%;
+            height: 20px;
+            position: absolute;
+            top:1.5rem;
+            left: 0;
+            text-align: end;
+    }
+     
         .styleLang{
-            margin-top: 12px;
             display: flex;
-            margin-right: 2rem;
-            justify-content: end;
+            width: 100%;
+            justify-content: center;
             font-weight: bold;
             color: #fbda39;
+            padding: 12px;
+        }
+
+        .styleNAv{
+            margin-right: 2.5rem !important;
         }
 
       

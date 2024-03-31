@@ -11,10 +11,10 @@ const About = () => {
         <ModalPhone />
       </span>
       <div className=" StlyeAll">
-        <div className="StyleNav">
-          <NavbarMain />
-        </div>
         <div className="ImageHero">
+          <div className="StyleNav">
+            <NavbarMain />
+          </div>
           <h1 className="font-iransans">
             {" "}
             ما در فروشگاه مصالح ساختمانی چه خدماتی ارائه می دهیم{" "}

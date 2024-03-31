@@ -14,7 +14,9 @@ const Achieve = () => {
     <div className="Countainer font-iransans">
       <div className="row h-full justify-evenly" style={{ margin: "0 15px" }}>
         <div className="col-sm-12 col-lg-2 self-center">
-          <div className="styleRes">
+          <div className="styleRes" style={{
+            borderRadius:12
+          }}>
             <div
               style={{
                 position: "absolute",
@@ -23,27 +25,15 @@ const Achieve = () => {
                 height: "100%",
                 opacity: "0.8",
                 backgroundColor: "#f5cd00",
+                borderRadius:12
               }}
             ></div>
 
-            {/* <h1
-              style={{
-                position: "absolute",
-                top: "40%",
-                right: "40%",
-                fontSize: "60px",
-                fontWeight: "bold",
-                color: "#000",
-                fontFamily:"iransans-num"
-              }}
-            >
-              24
-            </h1> */}
             <p
               style={{
                 position: "absolute",
-                top: "50%",
-                right: "3rem",
+                top: "45%",
+                right: "2rem",
                 color: "#000",
                 fontWeight: "bold",
                 fontSize: "20px",
@@ -51,7 +41,7 @@ const Achieve = () => {
               }}
               className="styleModern"
             >
-              مدرن ساخت
+               بازرگانی مصباحی
             </p>
           </div>
         </div>
@@ -66,47 +56,24 @@ const Achieve = () => {
               }}
               className="font-iransans"
             >
-              <span><img src={require("../../image/photo slider/icons8-question-64.png")}/></span>
-             <Link to="/About"> درباره ما</Link>
-            
+              <span>
+                <img
+                  src={require("../../image/photo slider/icons8-question-64.png")}
+                />
+              </span>
+              <Link to="/About"> درباره ما</Link>
             </h1>
             <p style={{ color: "#7b7777", fontWeight: "bold" }}>
-            ما در این مجموعه توانسته ایم در طی سالیان گذشته با ارائه مصالح با
-            کیفیت و مناسب به مشتریان خود،رضایت حداکثری را کسب نماییم. مفتخر
-            هستیم که توانسته ایم برای آبادانی کشور عزیزمان، قدمی هرچند کوچک
-            برداریم ودر حال حاضر نیز تامین کننده بسیاری از مصالح ساختمانی هستیم.
-            لازم به ذکر است در کنار تامین مصالح، تامین سایر محصولات ساختمانی را
-            نیز انجام می دهیم. و تمام تلاش ما بر این است که در این راستا خدمات
-            بیشتری به هم استانی ها و هموطن های عزیز خود ارائه دهیم.
+              ما در این مجموعه توانسته ایم در طی سالیان گذشته با ارائه مصالح با
+              کیفیت و مناسب به مشتریان خود،رضایت حداکثری را کسب نماییم. مفتخر
+              هستیم که توانسته ایم برای آبادانی کشور عزیزمان، قدمی هرچند کوچک
+              برداریم ودر حال حاضر نیز تامین کننده بسیاری از مصالح ساختمانی
+              هستیم. لازم به ذکر است در کنار تامین مصالح، تامین سایر محصولات
+              ساختمانی را نیز انجام می دهیم. و تمام تلاش ما بر این است که در این
+              راستا خدمات بیشتری به هم استانی ها و هموطن های عزیز خود ارائه
+              دهیم.
             </p>
           </div>
-          {/* <div className="row mt-12 font-iransans">
-            {jobs.map((item, index) => (
-              <div key={index} className="col-3">
-                <div className="relative">
-                  <h1
-                    style={{
-                      fontSize: "40px",
-                      fontWeight: "bold",
-                      color: "#f5cd00",
-                      fontFamily: "iransans-num",
-                    }}
-                  >
-                    {item.number}
-                  </h1>
-                  <span
-                    style={{
-                      fontSize: "12px",
-                      fontWeight: "bold",
-                      color: "#000",
-                    }}
-                  >
-                    {item.title}
-                  </span>
-                </div>
-              </div>
-            ))}
-          </div> */}
         </div>
       </div>
     </div>

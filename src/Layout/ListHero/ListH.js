@@ -1,7 +1,7 @@
 import React from "react";
 import "./ListH.css";
 import Home1 from "../../image/photo slider/ceman.jpg";
-import Home2 from "../../image/photo slider/heblecs.jpg";
+import Home2 from "../../image/photo slider/slider1.jpg";
 import Home3 from "../../image/photo slider/cash.jpg";
 import { Link } from "react-router-dom";
 const Itemlist = [
@@ -12,7 +12,7 @@ const Itemlist = [
     src: Home1,
     dir: "rtl",
     width: "50%",
-    textAlign:"justify"
+    textAlign: "justify",
   },
   {
     id: 2,
@@ -20,8 +20,8 @@ const Itemlist = [
     type: "بلوک هبلکس از جمله مصالح ساختمانی است که از جنس ترکیبی سیمان، آهک، پودر آلومینیوم و سیلیس ساخته شده است",
     src: Home2,
     dir: "ltr",
-    width: "90%",
-    textAlign:"end"
+    width: "80%",
+    textAlign: "end",
   },
   {
     id: 3,
@@ -31,7 +31,7 @@ const Itemlist = [
     dir: "rtl",
     width: "90%",
     height: "20rem",
-    textAlign:"justify"
+    textAlign: "justify",
   },
 ];
 
@@ -39,15 +39,17 @@ const ListH = () => {
   return (
     <>
       <div className="Containers" style={{ marginTop: "5rem" }}>
-        <div className="row StyleHeader items-center mb-12" >
-          <div className="col-6"  style={{ textAlign: "start" }}>
+        <div className="row StyleHeader items-center mb-12">
+          <div className="col-6" style={{ textAlign: "start" }}>
             <div className="styleProd">
-              <h1 className="font-iransans font-bold text-4xl"><Link to="/PageProduct">محصولات ما</Link></h1>
+              <h1 className="font-iransans font-bold text-4xl">
+                <Link to="/PageProduct">محصولات ما</Link>
+              </h1>
             </div>
           </div>
-          <div className="col-6" style={{textAlign:"-webkit-left"}}>
+          <div className="col-6" style={{ textAlign: "-webkit-left" }}>
             <div>
-              <img  src={require("../../image/icons8-target-50.png")} />
+              <img src={require("../../image/icons8-target-50.png")} />
             </div>
           </div>
         </div>
@@ -65,17 +67,27 @@ const ListH = () => {
                   <div className="styleLine">
                     <h1
                       className="font-iransans"
-                      style={{ fontSize: "20px", fontWeight: "bold",textAlign:`${item.textAlign}` }}
+                      style={{
+                        fontSize: "20px",
+                        fontWeight: "bold",
+                        textAlign: `${item.textAlign}`,
+                      }}
                     >
                       {item.title}
                     </h1>
                     <p
                       className="font-iransans"
-                      style={{ color: "#7b7777", fontWeight: "bold",fontSize:"16px",marginTop:"12px",textAlign:`${item.textAlign}`}}
+                      style={{
+                        color: "#7b7777",
+                        fontWeight: "bold",
+                        fontSize: "16px",
+                        marginTop: "12px",
+                        textAlign: `${item.textAlign}`,
+                      }}
                     >
                       {item.type}
                     </p>
-                    <span
+                    {/* <span
                       style={{
                         color: "#ec9146",
                         fontSize: "10px",
@@ -84,7 +96,7 @@ const ListH = () => {
                       }}
                     >
                       بیشتر بدانید
-                    </span>
+                    </span> */}
                   </div>
                 </div>
                 <div className="col-sm-12 col-lg-8">
@@ -94,12 +106,12 @@ const ListH = () => {
                       style={{
                         width: `${item.width}`,
                         height: `${item.height}`,
+                        borderRadius: "9px",
                       }}
                       src={item.src}
                       alt={item.title}
                     />
                   </div>
-                  <div></div>
                 </div>
               </div>
             </div>

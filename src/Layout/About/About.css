@@ -1,7 +1,8 @@
 
 .Contaner{
     width: 800px;
-    margin: 0 auto;
+    margin: auto;
+    padding-left: 0;
 }
 
 
@@ -10,18 +11,24 @@
     background-image: url('../../image/image new/New folder/compressor/2.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    height: 10rem;
+    height: 15rem;
     max-width: 100%;
+    margin-top: 0;
 
 }
-
+.StyleNav{
+  position: absolute;
+  width: 100%;
+  right: 0;
+  background-color: #fff;
+}
 .ImageHero h1{
  text-align: center;
  color: #524e4e;
  font-size: 20px;
  font-weight: bold;
  z-index: 102;
- padding-top: 5rem;
+ padding-top: 8rem;
 }
 .StlyeAll p{
   margin: 0 auto;

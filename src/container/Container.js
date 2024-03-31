@@ -12,16 +12,18 @@ import Phone from '../image/icons8-phone.svg'
 import ModalPhone from './Modal/ModalPhone'
 const Container = () => {
   return (
-    <div className='StyleContauner'>
-      <span className='stylePhone'><ModalPhone/></span>
-      <NavbarMain/>
-      <ImageHero/>
-      <Ht/>
-      <ListH/>
-      <Slider/>
-      <Achieve/>
-      {/* <SlideT/> */}
-      <Footer/>
+    <div>
+      <NavbarMain />
+      <div className='StyleContauner'>
+        <span className='stylePhone'><ModalPhone /></span>
+        <ImageHero />
+        <Ht />
+        <ListH />
+        <Slider />
+        <Achieve />
+        {/* <SlideT/> */}
+        <Footer />
+      </div>
     </div>
   )
 }

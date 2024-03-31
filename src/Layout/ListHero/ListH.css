@@ -1,3 +1,4 @@
+
 .Containers{
     max-width: 900px;
     margin: 0 auto;
@@ -25,6 +26,7 @@
   }
   .styleImag{
     width: 100% !important;
+    margin-top: 5px;
   }
   .styleLine::before{
  display: none;

@@ -34,13 +34,13 @@
 
 .cardStyle h4{
     color: #fbda39;
-   padding: 26px 0;
+   padding: 20px 0;
    font-size: 17px;
    font-weight: bold;
 }
 .cardStyle h5{ 
     color: #fff;
-    font-size: 17px;
+    font-size: 12px;
     
     font-family: 'iransans-num';
 }
@@ -60,8 +60,9 @@
 @media screen and (max-width: 1020px) {
 
  .Conntaineer{
-    margin-top: 20rem !important;
+    margin-top: 1rem !important;
     overflow-y: hidden;
+    height: auto !important;
  }
 
  .StlRow{
@@ -70,9 +71,9 @@
 
      .styleCol{
         flex: 0 0 auto;
-        width: 50%;
+        width: 70%;
         text-align: center;
-        margin-bottom: 35px;
+        margin-bottom: 60px;
     }
 
     .cardStyle img{
@@ -93,7 +94,7 @@
    
      .cardStyle h5{
        
-        font-size: 12px;
+        font-size: 11px !important;
         font-weight: bold;
     }
 

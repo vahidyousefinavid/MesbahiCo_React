@@ -1,44 +1,56 @@
 
 .Countainerrrs{
-    max-width: 1200px;
-    margin:50px auto 0 auto;
-    padding: 0;
+    margin:0 auto 0 auto;
+    /* padding: 0 !important; */
+    position: relative;
+    box-sizing: border-box;
+}
+.PNav{
+    position: absolute;
+    width: 100%;
+    left: 0;
 }
 
 .bg-hero{
-   background-color: #f8f9f4;
+    max-width: 1200px !important;
+    /* background-color: #201203; */
     margin:auto;
     border-radius: 5px;
  
 }
-.COL{
-   
-    z-index: 99;
-}
+
+
+
+
 .card{
     width: 100%;
     height: 100%;
     background-color:inherit;
     border-radius: 8px 8px 8px 8px !important;
-    box-shadow: -10px 15px 15px  #939683 !important;
+    box-shadow: -10px 15px 15px  #28221e !important;
 }
 .card-body{
     position: relative;
     text-align: center !important;
-    z-index: 99;
-    background-image: linear-gradient(rgb(255, 255, 255), rgb(194, 193, 193));
+    z-index: 100;
+    background-color: #221b14;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    /* background-image: linear-gradient(rgb(250, 148, 108), rgb(209, 79, 14)); */
 }
 
 .card-body h4{
     font-weight: bold;
     font-size: 20px;
+    margin-bottom: 15px !important;
     
 }
 
 .card-body h6{
     margin-top: 5px;
     font-weight: bold;
-    font-size: 12px;
+    font-size: 15px;
     font-family: 'iransans-num';
 }
 
@@ -49,7 +61,7 @@
     border-radius: 8px;
     width: 3rem;
     height: 3rem;
-    background-color: white;
+    background-color: #221b14;
     position: absolute;
     top: -15px;
     right: 0 !important;
@@ -64,9 +76,29 @@
     right: 8.5rem;
 }
 
+.bottCard{
+    position: absolute !important;
+    top: 7.4rem;
+    right: 9%;
+    background-color: #3f3e3d;
+    width: 85% !important;
+    height: 8px;
+    z-index: 90;
+    border-radius: 0 0 5px 5px
+}
 
 @media screen and (max-width: 800px) {
+    .Countainerrrs{
+        margin-top: 0;
+        padding-left: 0;
+        margin-left: 0;
+    }
 
+    .RESst{
+        margin-top: 3rem;
+        margin-left: 0 !important;
+        padding-left: 0 !important;
+    }
     .card{
         width: 80% !important;
         height: 100%;
@@ -74,26 +106,42 @@
         border-radius: 8px 8px 8px 8px !important;
         box-shadow: none !important;
         margin: auto !important;
+        box-shadow: -10px 15px 15px  #28221e !important;
     }
+
+  
     .StyleIcon{
         display: flex;
         border-radius: 8px;
         width: 3rem;
         height: 3rem;
-        background-color: white;
+        background-color: #221b14;
         position: absolute;
         top: -15px;
+        right: 0 !important;
     }
-
+.COL{
+    margin-bottom: 50px;
+    padding: 0;
+    margin-left: 0;
+    /* background-color: #f68012; */
+}
     .card-body h4{
         font-weight: bold;
-        font-size: 12px;
+        font-size: 20px;
     }
     
     .card-body h6{
         margin-top: 12px;
         font-weight: bold;
-        font-size: 9px;
+        font-size: 13.5px;
+    }
+
+    .bg-hero{
+        
+        width: 100% !important;
+        height: auto !important;
+        padding: 0;
     }
     
  }
