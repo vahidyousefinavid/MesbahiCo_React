@@ -13,6 +13,7 @@ const Itemlist = [
     dir: "rtl",
     width: "50%",
     textAlign: "justify",
+    alt:'خرید و فروش انواع سیمان'
   },
   {
     id: 2,
@@ -22,6 +23,7 @@ const Itemlist = [
     dir: "ltr",
     width: "80%",
     textAlign: "end",
+    alt:'خرید و فروش  هبلکس'
   },
   {
     id: 3,
@@ -32,6 +34,7 @@ const Itemlist = [
     width: "90%",
     height: "20rem",
     textAlign: "justify",
+    alt:'خرید و فروش  سیمان'
   },
 ];
 
@@ -49,7 +52,7 @@ const ListH = () => {
           </div>
           <div className="col-6" style={{ textAlign: "-webkit-left" }}>
             <div>
-              <img src={require("../../image/icons8-target-50.png")} />
+              <img alt="خرید و فروش مصالح ساختمانی" src={require("../../image/icons8-target-50.png")} />
             </div>
           </div>
         </div>
@@ -109,7 +112,7 @@ const ListH = () => {
                         borderRadius: "9px",
                       }}
                       src={item.src}
-                      alt={item.title}
+                      alt={item.alt}
                     />
                   </div>
                 </div>

@@ -8,6 +8,7 @@ import Slide4 from "../../image/photo slider/slider4.jpg";
 import Slide12 from "../../image/photo slider/slider12.jpg";
 import Slide13 from "../../image/photo slider/slider13.jpg";
 import Slide14 from "../../image/photo slider/slider14.jpg";
+import Slide15 from "../../image/photo slider/slider20.jpg";
 import Slide5 from "../../image/photo slider/slider5.jpg";
 import Slide6 from "../../image/photo slider/slider6.jpg";
 import Slide7 from "../../image/photo slider/slider7.jpg";
@@ -26,12 +27,12 @@ import { Box, Typography, rgbToHex } from "@mui/material";
 
 const Slider = () => {
   const Slides = [
-    { id: 1, src: Slide14, title: "انواع سیمان" },
+    { id: 1, src: Slide15, title: "انواع سیمان" },
     { id: 2, src: Slide1, title: "هبلکس(بلوک aac)" },
+    { id: 1, src: Slide14, title: "انواع سیمان" },
     { id: 3, src: Slide2, title: "انواع گچ سفید کاری" },
     { id: 4, src: Slide12, title: "انواع گچ سفید کاری" },
     { id: 5, src: Slide13, title: "انواع گچ سفید کاری" },
-
     { id: 6, src: Slide3, title: "گچ و خاک آماده" },
     { id: 7, src: Slide4, title: "انواع سفال" },
     { id: 8, src: Slide5, title: "انواع آجر طاقی" },
@@ -141,7 +142,9 @@ const Slider = () => {
                   }
                 }
               }}>
-                <img src={item.src} style={{
+                <img 
+                alt={item.title}
+                src={item.src} style={{
                   display: 'flex',
                   width: '100%',
                   height: '100%',

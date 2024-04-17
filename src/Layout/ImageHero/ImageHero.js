@@ -24,56 +24,60 @@ const ImageHero = () => {
           >
             <Tooltip title="تلگرام" placement="top">
 
-            <div className=" mb-3 styleLogo col-lg-3">
-              <img
-                width="  20px"
-                style={{
-                  backgroundColor: "#fff",
-                  borderRadius: "50px",
-                  padding: "2px",
-                }}
-                src={Twitter}
-              />
-            </div>
+              <div className=" mb-3 styleLogo col-lg-3">
+                <img
+                  alt="بازرگانی مصالح ساختمانی مصباحی در تلگرام"
+                  width="  20px"
+                  style={{
+                    backgroundColor: "#fff",
+                    borderRadius: "50px",
+                    padding: "2px",
+                  }}
+                  src={Twitter}
+                />
+              </div>
             </Tooltip>
             <Tooltip title="ایتا" placement="top">
-            <div className=" mb-3 styleLogo col-lg-3">
-              <img
-                width="20px"
-                style={{
-                  backgroundColor: "#fff",
-                  borderRadius: "50px",
-                  padding: "2px",
-                }}
-                src={Facebook}
-              />
-            </div>
+              <div className=" mb-3 styleLogo col-lg-3">
+                <img
+                  alt="بازرگانی مصالح ساختمانی مصباحی در ایتا"
+                  width="20px"
+                  style={{
+                    backgroundColor: "#fff",
+                    borderRadius: "50px",
+                    padding: "2px",
+                  }}
+                  src={Facebook}
+                />
+              </div>
             </Tooltip>
             <Tooltip title="ایمیل" placement="top">
-            <div className=" mb-3 styleLogo col-lg-3">
-              <img
-                width="20px"
-                style={{
-                  backgroundColor: "#fff",
-                  borderRadius: "50px",
-                  padding: "2px",
-                }}
-                src={G}
-              />
-            </div>
+              <div className=" mb-3 styleLogo col-lg-3">
+                <img
+                  alt="بازرگانی مصالح ساختمانی مصباحی در ایمیل"
+                  width="20px"
+                  style={{
+                    backgroundColor: "#fff",
+                    borderRadius: "50px",
+                    padding: "2px",
+                  }}
+                  src={G}
+                />
+              </div>
             </Tooltip>
-            <Tooltip title="روبیکا"  placement="top">
-            <div className=" mb-3 styleLogo col-lg-3">
-              <img
-                width="20px"
-                style={{
-                  backgroundColor: "#fff",
-                  borderRadius: "50px",
-                  padding: "3px",
-                }}
-                src={Insta}
-              />
-            </div>
+            <Tooltip title="روبیکا" placement="top">
+              <div className=" mb-3 styleLogo col-lg-3">
+                <img
+                  alt="بازرگانی مصالح ساختمانی مصباحی در روبیکا"
+                  width="20px"
+                  style={{
+                    backgroundColor: "#fff",
+                    borderRadius: "50px",
+                    padding: "3px",
+                  }}
+                  src={Insta}
+                />
+              </div>
             </Tooltip>
           </div>
           <div

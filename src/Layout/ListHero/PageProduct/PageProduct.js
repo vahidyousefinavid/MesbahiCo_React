@@ -7,6 +7,7 @@ import Slide4 from "../../../image/photo slider/slider4.jpg";
 import Slide12 from "../../../image/photo slider/slider12.jpg";
 import Slide13 from "../../../image/photo slider/slider13.jpg";
 import Slide14 from "../../../image/photo slider/slider14.jpg";
+import Slide15 from "../../../image/photo slider/slider20.jpg";
 import Slide5 from "../../../image/photo slider/slider5.jpg";
 import Slide6 from "../../../image/photo slider/slider6.jpg";
 import Slide7 from "../../../image/photo slider/slider7.jpg";
@@ -23,12 +24,12 @@ import { Box, Typography } from "@mui/material";
 
 const PageProduct = () => {
   const products = [
+    { id: 1, src: Slide15, title: "انواع سیمان" },
     { id: 1, src: Slide14, title: "انواع سیمان" },
     { id: 2, src: Slide1, title: "هبلکس(بلوک aac)" },
     { id: 3, src: Slide2, title: "انواع گچ سفید کاری" },
     { id: 4, src: Slide12, title: "انواع گچ سفید کاری" },
     { id: 5, src: Slide13, title: "انواع گچ سفید کاری" },
-
     { id: 6, src: Slide3, title: "گچ و خاک آماده" },
     { id: 7, src: Slide4, title: "انواع سفال" },
     { id: 8, src: Slide5, title: "انواع آجر طاقی" },
@@ -59,7 +60,7 @@ const PageProduct = () => {
             alignItems: 'center',
             flexWrap: 'wrap',
             paddingTop: 100,
-            paddingBottom:60
+            paddingBottom: 60
           }}
         >
           {products.map((item, index) => (
@@ -74,13 +75,14 @@ const PageProduct = () => {
               alignItems: 'center',
               boxShadow: '0px 10px 25px 0px rgba(0, 0, 0, 0.3)',
             }}>
-              <img src={item.src} style={{
-                display: 'flex',
-                width: '100%',
-                height: '100%',
-                borderRadius: 15,
-                zIndex: 10
-              }} />
+              <img
+                alt={'خرید' + item.title } src={item.src} style={{
+                  display: 'flex',
+                  width: '100%',
+                  height: '100%',
+                  borderRadius: 15,
+                  zIndex: 10
+                }} />
               <Box sx={{
                 display: 'flex',
                 width: '80%',
@@ -89,21 +91,21 @@ const PageProduct = () => {
                 bottom: -50,
                 // zIndex: 1,
                 textAlign: 'center',
-                backgroundImage:'linear-gradient(to right, hsla(39,100%,68%,1) 0%, #c77f1a 51%, #eba51b 100%)',
+                backgroundImage: 'linear-gradient(to right, hsla(39,100%,68%,1) 0%, #c77f1a 51%, #eba51b 100%)',
                 textTransform: 'uppercase',
                 transition: '0.5s',
-                cursor:'pointer',
+                cursor: 'pointer',
                 backgroundSize: '200% auto',
                 color: 'white',
                 borderRadius: '6px',
                 '&:hover': {
-                    backgroundPosition: 'right center', 
-                    color: '#fff',
-                    textDecoration: 'none',
+                  backgroundPosition: 'right center',
+                  color: '#fff',
+                  textDecoration: 'none',
                 },
                 boxShadow: '0px 10px 25px 0px rgba(0, 0, 0, 0.2)',
-                justifyContent:'center',
-                alignItems:'center'
+                justifyContent: 'center',
+                alignItems: 'center'
 
               }}>
                 <Typography style={{ color: '#111', fontFamily: "IRANSans" }}>

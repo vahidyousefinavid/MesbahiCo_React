@@ -1,55 +1,108 @@
-.Container{
+.Container {
     max-width: 1200px;
     margin: 0 auto;
     /* height: 4rem; */
 }
 
-.LogoLeft{
+.LogoLeft {
     display: none;
 }
 
-.DISCOL{
+.DISCOL {
     z-index: 800;
     background-color: #fff;
     width: 100%;
 }
 
-.Fliexrow{
+/* .Fliexrow{
     display: flex;
     flex-direction: row;
+} */
+.StyRES {
+    width: 16% !important;
+    height: 50px !important;
+    position: absolute;
+    top: 1.1rem;
+    left: 1rem;
+    text-align: end;
 }
 
 @media screen and (max-width: 1020px) {
 
-    
-   
-  
-    .LogoLeft{
+
+
+
+    .LogoLeft {
         display: block !important;
     }
-   
+
     .StyRES {
-            width:40%;
-            height: 20px;
-            position: absolute;
-            top:1.5rem;
-            left: 0;
-            text-align: end;
+        /* width: 40% !important; */
+        height: 50px !important;
+        position: absolute;
+        top: 1.1rem;
+        left: 1rem;
+        text-align: end;
     }
-     
-        .styleLang{
-            display: flex;
-            width: 100%;
-            justify-content: center;
-            font-weight: bold;
-            color: #fbda39;
-            padding: 12px;
-        }
 
-        .styleNAv{
-            margin-right: 2.5rem !important;
-        }
+    .StyRES img {
+        width: 100% !important;
+        height: 100% !important;
+    }
 
-      
- }
+    .styleLang {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        font-weight: bold;
+        color: #fbda39;
+        padding: 12px;
+    }
 
+    .styleNAv {
+        margin-right: 2.5rem !important;
+    }
+
+
+}
+
+@media screen and (max-width: 600px) {
+    .StyRES {
+        width: 20% !important;
+        height: 50px !important;
+        position: absolute;
+        top: 1.1rem;
+        left: 1rem;
+        text-align: end;
+    }
+}
+@media screen and (max-width: 500px) {
+    .StyRES {
+        width: 25% !important;
+        height: 50px !important;
+        position: absolute;
+        top: 1.1rem;
+        left: 1rem;
+        text-align: end;
+    }
+}
+@media screen and (max-width: 390px) {
+    .StyRES {
+        width: 29% !important;
+        height: 50px !important;
+        position: absolute;
+        top: 1.1rem;
+        left: 1rem;
+        text-align: end;
+    }
+}
+@media screen and (max-width: 320px) {
+    .StyRES {
+        width: 33% !important;
+        height: 50px !important;
+        position: absolute;
+        top: 1.1rem;
+        left: 1rem;
+        text-align: end;
+    }
+}

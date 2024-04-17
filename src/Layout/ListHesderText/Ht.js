@@ -44,8 +44,8 @@ const Ht = () => {
             <div className="row styleRow">
               <div className="col-2">
                 <div>
-                  <img className="mb-2 styleTick  p-1 rounded-full" style={{borderRadius:"50px",border:"2px solid #f5cd00"}} src={item.src} />
-                  <img className="StyleSvg"  src={item.SVG}/>
+                  <img alt="خرید مصالح ساختمانی" className="mb-2 styleTick  p-1 rounded-full" style={{borderRadius:"50px",border:"2px solid #f5cd00"}} src={item.src} />
+                  <img alt="خرید مصالح ساختمانی" className="StyleSvg"  src={item.SVG}/>
                 </div>
               </div>
               <div className="col-8 styleParag" style={{width:"80%"}}>

@@ -59,6 +59,7 @@ const Achieve = () => {
               <span>
                 <img
                   src={require("../../image/photo slider/icons8-question-64.png")}
+                  alt="بازرگانی مصباحی خرید مصالح ساختمانی"
                 />
               </span>
               <Link to="/About"> درباره ما</Link>

@@ -43,7 +43,7 @@ const SliderAbout = () => {
       >
         {Slides.map((item, index) => (
           <SwiperSlide key={index}>
-            <img src={item.src} />
+            <img src={item.src} alt='بازرگانی مصباحی خرید مصالح ساختمانی' />
           </SwiperSlide>
         ))}
       </Swiper>

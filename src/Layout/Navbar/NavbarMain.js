@@ -8,6 +8,7 @@ import "./NavbarMain.css";
 import NavbarCollapse from "react-bootstrap/esm/NavbarCollapse";
 
 import LOGO from "../../image/photo slider/backgrund/icon/icons8-left-24.png";
+import { Box } from "@mui/material";
 
 const NavbarMain = () => {
   return (
@@ -18,13 +19,13 @@ const NavbarMain = () => {
       backgroundColor: 'white',
       boxShadow: '0px 10px 25px 0px rgba(0, 0, 0, 0.2)',
     }}>
-      <div className="Container DISCOL" 
-      style={{
-        position: "relative",
-        paddingBottom: 6,
-      }}>
+      <div className="Container DISCOL"
+        style={{
+          position: "relative",
+          paddingBottom: 6,
+        }}>
         <div
-          className="Fliexrow"
+          className="row"
           style={{ justifyContent: "space-between", position: "relative", alignItems: "center" }}
         >
           <div className="col-sm-8 col-lg-9 ">
@@ -73,7 +74,7 @@ const NavbarMain = () => {
                         className="LogoLeft"
                         style={{ position: "absolute", right: "-1.5rem" }}
                       >
-                        <img src={LOGO} alt="left" />
+                        <img src={LOGO} alt="بازرگانی مصباحی" />
                       </span>
                       خانه
                     </Nav.Link>
@@ -92,7 +93,7 @@ const NavbarMain = () => {
                           className="LogoLeft"
                           style={{ position: "absolute", right: "-1.5rem" }}
                         >
-                          <img src={LOGO} alt="left" />
+                          <img src={LOGO} alt="بازرگانی مصباحی" />
                         </span>
                         لیست محصولات
                       </Link>
@@ -111,7 +112,7 @@ const NavbarMain = () => {
                         className="LogoLeft"
                         style={{ position: "absolute", right: "-1.5rem" }}
                       >
-                        <img src={LOGO} alt="left" />
+                        <img src={LOGO} alt="بازرگانی مصباحی" />
                       </span>
                       ارتباط با ما
                     </Nav.Link>
@@ -130,7 +131,7 @@ const NavbarMain = () => {
                           className="LogoLeft"
                           style={{ position: "absolute", right: "-1.5rem" }}
                         >
-                          <img src={LOGO} alt="left" />
+                          <img src={LOGO} alt="بازرگانی مصباحی" />
                         </span>
                         درباره ما
                       </Link>
@@ -140,9 +141,12 @@ const NavbarMain = () => {
               </Navbar.Collapse>
             </Navbar>
           </div>
-          <div style={{ alignSelf: "end" }}>
-            <span className="StyRES">
-              <img style={{ width: 140 }} className=" styleImg" src={Logo} />
+          <div className="col-sm-3 col-lg-2">
+            <span className=" StyRES">
+              <Box
+                sx={{ display: 'flex', width: 110 }}>
+                <img style={{ width: '100%' }} className=" styleImg" src={Logo} alt="بازرگانی مصباحی" />
+              </Box>
             </span>
           </div>
         </div>

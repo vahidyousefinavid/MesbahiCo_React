@@ -7,10 +7,14 @@
 }
 
 .styleCol{
-    height: 120px;
+    height: 125px;
     flex: 0 0 auto;
     width: 20%;
     text-align: center;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
 }
 
 .cardStyle{

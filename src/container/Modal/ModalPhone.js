@@ -13,13 +13,13 @@ const ModalPhone = () => {
       {width >= 900 ? (
         <Link to={"/Contant"}>
           <Button className="PossBtn">
-            <img src={Phone} />
+            <img src={Phone} alt="خرید مصالح ساختمانی" />
           </Button>
         </Link>
       ) : (
         <Button className="PossBtn">
           <a href={"tel:+989188808587"}>
-            <img src={Phone} />
+            <img src={Phone} alt="خرید مصالح ساختمانی"/>
           </a>
         </Button>
       )}
