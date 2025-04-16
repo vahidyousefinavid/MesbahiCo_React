@@ -8,6 +8,7 @@ import SlideProd4 from "./Layout/Caruosel/SlideProde4/SlideProd4";
 import About from "./Layout/About/About";
 import PageProduct from "./Layout/ListHero/PageProduct/PageProduct";
 import Contant from "./Layout/CountantUs/Contant";
+import Seo from "./Layout/seo/PageProduct";
 
 
 
@@ -22,6 +23,7 @@ const App = () => {
     {path:'/About' , element:<About/>},
     {path:'/PageProduct' , element:<PageProduct/>},
     {path:'/Contant' , element:<Contant/>},
+    {path:'/seo' , element:<Seo/>},
   ])
  
  return routs
